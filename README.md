@@ -3,3 +3,4 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Mariya286_fullstack-javascript-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Mariya286_fullstack-javascript-project-44)
 ![Demo](demo.cast)
 [Demo video](https://asciinema.org/a/NE1ds9cZVkIkIfNiLSPLPWQGP)
+[Video of the second game](https://asciinema.org/a/SZd9LwXwJIWoAqDesY6lH4sfq)
