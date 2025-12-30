@@ -16,7 +16,7 @@ for (let i = 0; i < 3; i += 1) {
   const correctAnswer = isEven ? 'yes' : 'no'
 
   if (answer === correctAnswer) {
-    console.log('Correct')
+    console.log('Correct!')
   }
   else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`)

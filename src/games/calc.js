@@ -1,4 +1,5 @@
-export default function getQuestionAndAnswerCalculate() {
+export const description = 'What is the result of expression?';
+export function getQuestionAndAnswerCalculate() {
  let firstNum = Math.floor(Math.random() * 100);
  let secondNum = Math.floor(Math.random() * 100);
 
@@ -19,6 +20,6 @@ export default function getQuestionAndAnswerCalculate() {
    answer = firstNum * secondNum;
    break;
 }
- const question = `What is the result of expression?\nQuestion: ${firstNum} ${operation} ${secondNum}`;
+ const question = `Question: ${firstNum} ${operation} ${secondNum}`;
  return { question, answer: String(answer) };
 }

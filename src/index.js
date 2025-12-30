@@ -1,14 +1,15 @@
 import readlineSync from 'readline-sync'
 import firstGame from '../src/cli.js'
 
-function playGame(gameFunction) {
+function playGame(description,gameFunction) {
  console.log('Welcome to the Brain Games!');
  const name = readlineSync.question('May I have your name? ');
  console.log(`Hello, ${name}!`);
+ console.log(description);
 
  for (let i = 0; i < 3; i++) {
  const { question, answer } = gameFunction();
- console.log('Question:', question);
+ console.log(question);
  const userAnswer = readlineSync.question('Your answer: ');
 
  if (userAnswer === answer) {

@@ -4,3 +4,4 @@
 ![Demo](demo.cast)
 [Demo video](https://asciinema.org/a/NE1ds9cZVkIkIfNiLSPLPWQGP)
 [Video of the second game](https://asciinema.org/a/SZd9LwXwJIWoAqDesY6lH4sfq)
+[Fixed video of second game](https://asciinema.org/a/BaXAstqHdR3BYnJHyjbV8xvV8)
