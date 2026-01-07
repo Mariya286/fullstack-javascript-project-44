@@ -1,25 +1,29 @@
-export const description = 'What is the result of expression?';
-export function getQuestionAndAnswerCalculate() {
- let firstNum = Math.floor(Math.random() * 100);
- let secondNum = Math.floor(Math.random() * 100);
 
- const operations = ['+', '-', '*'];
- const randomIndex = Math.floor(Math.random() * operations.length);
- const operation = operations[randomIndex];
+ const randomNumber = () => Math.floor(Math.random() * 100) + 1;
+ const operators = ['+', '-', '*'];
+
+const calcGame = () => {
+ const description = 'What is the result of expression?';
+
+ const getRoundData = () => {
+  const a = randomNumber();
+  const b = randomNumber();
+  const oper = operators[Math.floor(Math.random() * operators.length)];
 
  let answer;
+ switch(oper) {
+  case '+': answer = a + b; break;
+  case '-': answer = a - b; break;
+  case '*': answer = a * b; break;
+}
 
- switch(operation) {
-   case '+':
-   answer = firstNum + secondNum;
-   break;
-   case '-':
-   answer = firstNum - secondNum;
-   break;
-   case '*':
-   answer = firstNum * secondNum;
-   break;
-}
- const question = `Question: ${firstNum} ${operation} ${secondNum}`;
- return { question, answer: String(answer) };
-}
+return {
+ question: `${a} ${oper} ${b}`,
+ answer: String(answer),
+};
+};
+
+return { description, getRoundData };
+};
+
+export default calcGame;
