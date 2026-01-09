@@ -7,3 +7,4 @@
 [Fixed video of second game](https://asciinema.org/a/BaXAstqHdR3BYnJHyjbV8xvV8)
 [Video of the third game](https://asciinema.org/a/CastieG2sRoq3KsCV5eRe32Bi)
 [Video of the fourth game](https://asciinema.org/a/Ecwzi8iVpQT5vEYI)
+[Video of the fifth game](https://asciinema.org/a/yYK3KvH2iCKY2SOZ)
