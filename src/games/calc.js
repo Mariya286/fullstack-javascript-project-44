@@ -2,7 +2,7 @@ const randomNumber = () => Math.floor(Math.random() * 100) + 1
 const operators = ['+', '-', '*']
 
 const calcGame = () => {
-  const description = 'What is the result of expression?'
+  const description = 'What is the result of the expression?'
 
   const getRoundData = () => {
     const a = randomNumber()

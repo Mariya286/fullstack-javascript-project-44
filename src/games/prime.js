@@ -8,7 +8,7 @@ function isPrime(num) {
 };
 
 const primeGame = () => {
-  const description = 'Answer "yes" if the number is prime. Otherwise answer "no".'
+  const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
   const getRoundData = () => {
     const number = randomNumber()
