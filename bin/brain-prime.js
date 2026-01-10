@@ -4,6 +4,6 @@ import playGame from '../src/index.js';
 import primeGame from '../src/games/prime.js';
 import greeting from '../src/cli.js';
 
-greeting();
+const name = greeting();
 const game = primeGame();
-playGame(game);
+playGame(game, name);
