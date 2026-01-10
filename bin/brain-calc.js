@@ -4,6 +4,6 @@ import playGame from '../src/index.js';
 import calcGame from '../src/games/calc.js';
 import greeting from '../src/cli.js';
 
+greeting();
 const game = calcGame();
-const name = greeting();
-playGame(game, name);
+playGame(game);

@@ -4,6 +4,6 @@ import progressGame from '../src/games/progres.js';
 import playGame from '../src/index.js';
 import greeting from '../src/cli.js';
 
+greeting();
 const game = progressGame();
-const name = greeting();
-playGame(game, name);
+playGame(game);
