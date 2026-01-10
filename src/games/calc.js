@@ -11,9 +11,15 @@ const calcGame = () => {
 
     let answer
     switch (oper) {
-      case '+': answer = a + b; break
-      case '-': answer = a - b; break
-      case '*': answer = a * b; break
+      case '+':
+        answer = a + b
+        break
+      case '-':
+        answer = a - b
+        break
+      case '*':
+        answer = a * b
+        break
     }
 
     return {
