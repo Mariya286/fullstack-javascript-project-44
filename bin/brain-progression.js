@@ -2,6 +2,8 @@
 
 import progressGame from '../src/games/progres.js';
 import playGame from '../src/index.js';
+import greeting from '../src/cli.js';
 
 const game = progressGame();
-playGame(game);
+const name = greeting();
+playGame(game, name);
