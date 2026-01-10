@@ -1,25 +1,25 @@
-const randomNumber = () => Math.floor(Math.random() * 100) + 1;
+const randomNumber = () => Math.floor(Math.random() * 100) + 1
 
 const gcd = (a, b) => {
- while (b !== 0) {
-  [a, b] = [b, a % b];
- }
-return a;
-};
+  while (b !== 0) {
+    [a, b] = [b, a % b]
+  }
+  return a
+}
 
 const gcdGame = () => {
- const description = 'Find the greatest common divisor of given numbers.';
+  const description = 'Find the greatest common divisor of given numbers.'
 
- const getRoundData = () => {
-  const a = randomNumber();
-  const b = randomNumber();
-  return {
-   question: `${a} ${b}`,
-   answer: String(gcd(a, b)),
-};
-};
+  const getRoundData = () => {
+    const a = randomNumber()
+    const b = randomNumber()
+    return {
+      question: `${a} ${b}`,
+      answer: String(gcd(a, b)),
+    }
+  }
 
-return { description, getRoundData };
-};
+  return { description, getRoundData }
+}
 
-export default gcdGame;
+export default gcdGame
