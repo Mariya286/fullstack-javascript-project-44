@@ -2,8 +2,9 @@
 
 import playGame from '../src/index.js';
 import primeGame from '../src/games/prime.js';
-import greeting from '../src/cli.js';
+import { greeting, askName } from '../src/cli.js';
 
-const name = greeting();
+const greet = greeting();
+const name = askName();
 const game = primeGame();
 playGame(game, name);

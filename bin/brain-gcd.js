@@ -2,8 +2,9 @@
 
 import playGame from '../src/index.js';
 import gcdGame from '../src/games/gcd.js';
-import greeting from '../src/cli.js';
+import { greeting, askName } from '../src/cli.js';
 
-const name = greeting();
+const greet = greeting();
+const name = askName();
 const game = gcdGame();
 playGame(game, name);

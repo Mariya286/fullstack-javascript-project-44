@@ -2,9 +2,10 @@
 
 import playGame from '../src/index.js';
 import evenGame from '../src/games/even.js';
-import greeting from '../src/cli.js';
+import { greeting, askName } from '../src/cli.js';
 
-const name = greeting();
+const greet = greeting();
+const name = askName();
 const game = evenGame()
 playGame(game, name);
 
