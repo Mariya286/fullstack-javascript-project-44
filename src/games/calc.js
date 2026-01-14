@@ -1,4 +1,4 @@
-import randomNumber from '../helper.js';
+import randomNumber from '../helper.js'
 
 const operators = ['+', '-', '*']
 
