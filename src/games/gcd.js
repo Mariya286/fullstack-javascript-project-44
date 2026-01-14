@@ -1,4 +1,4 @@
-const randomNumber = () => Math.floor(Math.random() * 100) + 1
+import randomNumber from '../helper.js'
 
 const gcd = (a, b) => {
   while (b !== 0) {

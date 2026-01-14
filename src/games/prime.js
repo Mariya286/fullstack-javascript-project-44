@@ -1,4 +1,5 @@
-const randomNumber = () => Math.floor(Math.random() * 100) + 1
+import randomNumber from '../helper.js'
+
 function isPrime(num) {
   if (num <= 1) return false
   for (let i = 2; i <= Math.sqrt(num); i++) {

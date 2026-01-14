@@ -1,4 +1,4 @@
-const randomNumber = () => Math.floor(Math.random() * 100) + 1
+import randomNumber from '../helper.js'
 
 const evenGame = () => {
   const description = 'Answer "yes" if the number is even, otherwise answer "no".'

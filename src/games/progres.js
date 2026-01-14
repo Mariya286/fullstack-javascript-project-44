@@ -1,4 +1,5 @@
-const getRandomNumber = () => Math.floor(Math.random() * 100) + 1
+import randomNumber from '../helper.js'
+
 const getRandomLength = () => Math.floor(Math.random() * 6) + 5
 const getRandomIndex = length => Math.floor(Math.random() * length)
 
@@ -6,8 +7,8 @@ const progressGame = () => {
   const description = `What number is missing in the progression?`
 
   const generateRound = () => {
-    let start = getRandomNumber()
-    let step = getRandomNumber()
+    let start = randomNumber()
+    let step = randomNumber()
     let length = getRandomLength()
     let hiddenIndex = getRandomIndex(length)
 
