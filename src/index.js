@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync'
 import { greeting } from '../src/cli.js'
 
+greeting();
 const playGame = (game) => {
-  greeting();
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(game.description)
