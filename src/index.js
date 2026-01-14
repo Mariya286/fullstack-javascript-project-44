@@ -1,10 +1,15 @@
 import readlineSync from 'readline-sync'
 import { greeting } from '../src/cli.js'
 
-greeting();
-const playGame = (game) => {
+export const askName = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
+  return name;
+}
+
+const playGame = (game) => {
+  greeting();
+  const name = askName();
   console.log(game.description)
 
   const roundCount = 3;
